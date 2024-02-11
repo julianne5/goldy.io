@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #2d2439 1%,   
+    #87e1e9 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.text-block {
+    color: #fbaf00;
+    padding: 15px 25px;
+    padding-left: 25px;
+    font-family: The Billion Butterfly Personal Font, Palatino Linotype, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    position: static;
+  }
+
+.navigation {
+    width: 85%;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-content: stretch;
+    align-items: center;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+
+
+}
+
+.nav-divider {
+    width: 1px;
+    height: 22px;
+    background-color: #e4ebf3;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+
+
+body {
+    font-family: var(--bodyFont);
+    font-size: var(--16px);
+    color: var(--color-text-primary);
+    background: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    transition: background .2s linear;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "liga" on;
+    font-feature-settings: "liga" on;
+    -moz-font-feature-settings: "liga" on;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: var(--20px) auto 0;
+    position: relative;
+    z-index: var(--zindex-nav);
+}
+

@@ -1,0 +1,149 @@
+body {
+  background-color: #fff8f9;
+  display: block;
+  margin: auto; 
+}
+
+
+
+.footer {
+background-color:#FFF0F3;
+padding: 0;
+border: 1px solid #D898A4;
+font-size: 50%;
+text-align: center;
+width: auto;
+}
+
+.footer {
+font-size: 90px;
+  font-family:'perpetua', serif;
+      color: #D898A4;
+
+}
+
+
+
+.topnav {
+overflow: hidden;
+background-color: #FFF0F3;
+border: 1px solid #D898A4;
+
+}
+
+.topnav a {
+float: left; 
+display: block;
+color: #D898A4;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+}
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+
+}
+
+
+h1 {
+ text-align: center;
+ margin-left: 150px;
+ margin-right: 150px;
+}
+
+
+h4 {
+font-size: 45px;
+color: black;
+font-family:'perpetua', serif;
+margin: 0;
+}
+
+.p {
+position: absolute;
+top: 88%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 120px;
+color: #D898A4;
+font-family:'perpetua', serif;
+
+}
+
+.CATAWARDS {
+top: 76%;
+left: 32%;
+font-size: 20px;
+color: black;
+font-family:'perpetua', serif;
+}
+.Linkedin {
+top: 118%;
+left: 38%;
+font-size: 20px;
+color: black;
+font-family:'perpetua', serif;
+}
+
+h2 {
+top: 88%;
+left: 27.5%;
+font-size: 46px;
+color: black;
+font-family:'perpetua', serif;
+}
+
+.bottomleft {
+  position: absolute;
+  margin-left: -200px;
+  margin-top: 92px;
+}
+
+.bottomright {
+  position: absolute;
+  margin-top: -100px;
+  margin-left: -350px;
+}
+
+.planecolumn {
+width: 200px;
+height: 200px;
+left: 200px;
+top: 100px;
+font-weight: bold;
+position: relative;
+animation: myfirst 10s infinite;
+animation-direction: alternate;
+}
+
+@keyframes myfirst {
+0%   {left: -25px;top: 50px;}
+25%  {left: 1000px;top: -200px;}
+50%  {left: -50px;top: -350px;}
+
+}
+.trophy {
+ position: absolute;
+ margin-top: -120px;
+ margin-left: 40%;
+}
+.circle {
+height: 24px;
+width: 24px;
+border-radius: 24px;
+background-color: black;
+position: fixed; 
+top: 0;
+left: 0;
+pointer-events: none;
+z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+
+
+
+
+
+

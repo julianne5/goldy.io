@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    </style>
+<script>
+    // Your JavaScript code here
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section');
+        let currentSection = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        document.querySelectorAll('nav a').forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href').substring(1) === currentSection) {
+                a.classList.add('active');
+            }
+        });
+    });
+</script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Welcome to my personal website</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Detailed information about yourself, including background, education, skills, and interests.</p>
+        <img src="your-photo.jpg" alt="Your Photo">
+    </section>
+
+    <section id="resume">
+        <h2>Resume/CV</h2>
+        <p>Your professional experience, education, skills, and achievements.</p>
+        <a href="your-resume.pdf" download>Download Resume</a>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Showcase your work, projects, or creative endeavors.</p>
+        <!-- Add your portfolio items here -->
+    </section>
+
+    <section id="blog">
+        <h2>Blog/Articles</h2>
+        <p>Share your thoughts, insights, or expertise on specific topics.</p>
+        <!-- Add your blog articles here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Provide ways for visitors to get in touch.</p>
+        <!-- Add your contact information and form here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
