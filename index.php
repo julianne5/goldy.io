@@ -1,3 +1,14 @@
+<script>
+    // Check if the user is logged in and display their username
+    window.onload = function() {
+        const welcomeContainer = document.querySelector(".welcome-container");
+        const First_Name = "<?php echo isset($_SESSION['First_Name']) ? $_SESSION['First_Name'] : '' ?>";
+        if (First_Name) {
+            welcomeContainer.innerHTML = "Welcome, " + First_Name + "!";
+        }
+    };
+    
+</script>
     <!DOCTYPE 
     <html lang="en"><head>
     <link href="goldy-home1.css" rel="stylesheet" type="text/css">
@@ -27,16 +38,10 @@
         
             </div>
             </div>
+            
             </div>
-        <a style="
-        padding-top: 5px;
-        height: 33px;
-        width: 82px;
-        background: #ffc400c4;
-        float: inline-end;
-        margin-right: 2px;
-        text-align: center;
-        border-radius: 10px;
+            <div class="welcome-container" style=""></div>
+        <a style="padding-top: 5px;height: 33px;width: 82px;background: #ffc400c4;float: inline-end;margin-right: 2px;text-align: center;border-radius: 10px;
     " class="btn btn-warning" href="logout.php">Logout</a></div>
         <div class="section">
             <div class="container" style="">

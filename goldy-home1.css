@@ -125,6 +125,13 @@ body {
   line-height: 28px;
 }
 
+.comment {
+  padding: 10px 25px;
+  margin: 37px 145px;
+  width: 693px;
+  background: #32202f7d;
+  border-radius: 25px;
+}
 h1 {
   margin-top: 20px;
   margin-bottom: 15px;
@@ -273,7 +280,7 @@ a:active {
 }
 
 .comment {
-  background: #91a9bd4d;
+  background: #230d2196;
   width: 728px;
   border-radius: 25px;
   margin: 20px 25px;
@@ -583,7 +590,10 @@ background-color: rgb(38 21 45 / 51%);
 
 @media screen and (max-width: 991px) {
   
-
+.comment {
+  
+width: 50%;
+}
   .heading-jumbo {
       font-size: 56px;
       line-height: 65px;

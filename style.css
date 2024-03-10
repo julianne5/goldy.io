@@ -1,0 +1,115 @@
+body,html {
+    height: -webkit-fill-available;
+    /* width: -webkit-fill-available; */
+    background: #2d1a3b;
+    /* background: linear-gradient(320deg, #562c64, #ededed); */
+    background-size: 200% 100%;
+}
+
+.container {
+    margin-top: 0; 
+    width: 50%;
+    position: relative;
+    padding: 0;
+    display: grid;
+    grid-template:
+        ".";
+    border-radius: 25px;
+    background-color: #d8d1dd80;
+    margin: 21px auto;
+    box-shadow: rgb(0 0 0) 0px 12px 49px 28px;
+    height: 73%;
+}
+
+
+.form-control {
+    position: relative;
+    box-shadow: rgb(56 61 109) 12px 12px 29px 0px;
+    background-color: #f0f8ff6e;
+    border-style: none;
+    font-size: 15px;
+    border-radius: 28px;
+    height: 26px;
+    width: -webkit-fill-available;
+    padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 3px;
+}
+
+.last-name{
+        position: relative;
+        display: flex;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        height: 62px;
+}
+
+.first-name{
+    width: -webkit-fill-available;
+    position: absolute;
+    position: absolute;
+}
+
+.register {
+    font-size: 13px;
+    color: #f2f2f273;
+    position:relative;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register:after{
+    content:"";
+    height:3px;
+    width:0%;   
+    position: absolute;
+    background-color:#ff3c78;
+    left:0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.register:hover, .active{
+    color: white;
+
+}
+.register:hover:after{
+    width:100%;
+}
+
+.register-grid {
+    position: relative;
+    align-items: center;
+    /* width: 550px; */
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    /* border-right-style: groove; */
+    background: linear-gradient(138deg, #290c1f, #645766);
+    grid-template:
+        ". .";
+}
+
+.register-left{
+    background-color: #c855c8;
+    max-width: 600px;
+}
+
+.registration-fillup {
+    padding: 15px 30px;
+    position: relative;
+} 
+
+h2 {
+    font-size: 20px;
+    font-family: system-ui;
+}
+
+p {
+    margin-bottom: 6px;
+    color: #00000080;
+    font-size: 14px;
+    font-family: sans-serif;
+}
